@@ -9,22 +9,26 @@ const SLIDE_DURATION = 5000;
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1920&q=80",
+    image:
+      "https://images.unsplash.com/photo-1761049134691-b1bf8f60f4f2?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Professional security at event",
     subtitle: "Protection with Precision.",
   },
   {
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&q=80",
+    image:
+      "https://images.unsplash.com/photo-1485230405346-71acb9518d9c?q=80&w=1194&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Trained security team",
     subtitle: "Preparation. Professionalism. Prevention.",
   },
   {
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1920&q=80",
+    image:
+      "https://images.unsplash.com/photo-1760228604788-db8a36d5c1a3?q=80&w=1630&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Event security operations",
     subtitle: "Structured. Reliable. SIA-Licensed.",
   },
   {
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80",
+    image:
+      "https://images.unsplash.com/photo-1576807100081-6e12175343c6?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Venue and crowd management",
     subtitle: "Your safety is our priority.",
   },
@@ -124,8 +128,18 @@ export function HeroSection() {
         className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-3 text-white backdrop-blur-sm transition hover:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
         aria-label="Previous slide"
       >
-        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 19l-7-7 7-7"
+          />
         </svg>
       </button>
       <button
@@ -134,8 +148,18 @@ export function HeroSection() {
         className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/20 p-3 text-white backdrop-blur-sm transition hover:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
         aria-label="Next slide"
       >
-        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 5l7 7-7 7"
+          />
         </svg>
       </button>
 
@@ -151,7 +175,9 @@ export function HeroSection() {
           >
             <span
               className={`h-2 rounded-full transition-all duration-300 ${
-                i === current ? "w-8 bg-white" : "w-2 bg-white/50 group-hover:bg-white/70"
+                i === current
+                  ? "w-8 bg-white"
+                  : "w-2 bg-white/50 group-hover:bg-white/70"
               }`}
             />
           </button>
