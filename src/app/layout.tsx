@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "Security Operations Services (SOS) | Protection with Precision",
   description:
     "UK-based security and crowd management. Event security, venue security, SIA-licensed personnel, and professional safety solutions.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

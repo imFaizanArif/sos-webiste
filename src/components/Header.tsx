@@ -26,7 +26,6 @@ export function Header() {
             alt="SOS Security"
             width={120}
             height={32}
-            className=""
             unoptimized
           />
         </Link>
