@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -18,12 +19,16 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-red-100 bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/80">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-24 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-lg font-bold tracking-tight">
-            <span className="sos-gradient-text">SOS</span>
-            <span className="text-neutral-800"> Security</span>
-          </span>
+          <Image
+            src="/logo.svg"
+            alt="SOS Security"
+            width={120}
+            height={32}
+            className=""
+            unoptimized
+          />
         </Link>
 
         <nav className="hidden md:flex md:items-center md:gap-1">
@@ -34,7 +39,9 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={`relative rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
-                  isActive ? "text-red-700" : "text-neutral-600 hover:text-red-600"
+                  isActive
+                    ? "text-red-700"
+                    : "text-neutral-600 hover:text-red-600"
                 }`}
               >
                 {link.label}
@@ -56,11 +63,26 @@ export function Header() {
           onClick={() => setMobileOpen((o) => !o)}
           aria-label="Toggle menu"
         >
-          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
             {mobileOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
           </svg>
         </button>
@@ -82,7 +104,9 @@ export function Header() {
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
                   className={`rounded-lg px-4 py-3 text-sm font-medium ${
-                    isActive ? "bg-red-50 text-red-700" : "text-neutral-600 hover:bg-neutral-50"
+                    isActive
+                      ? "bg-red-50 text-red-700"
+                      : "text-neutral-600 hover:bg-neutral-50"
                   }`}
                 >
                   {link.label}
