@@ -27,7 +27,7 @@ const services = [
     title: "Close Protection & VIP",
     short: "Discreet protection for executives.",
     href: "/services#close-protection",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
   },
 ];
 

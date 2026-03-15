@@ -41,7 +41,7 @@ const services = [
     title: "Local Authority & Public Sector Support",
     description:
       "Crowd control, public reassurance, and emergency service liaison.",
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1721373381592-7a324682c01b?w=800&q=80",
     Icon: IconGov,
   },
   {
@@ -57,7 +57,7 @@ const services = [
     title: "Close Protection & VIP Security",
     description:
       "Discreet and professional protection services for executives and high-profile individuals.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
     Icon: IconVIP,
   },
 ];
